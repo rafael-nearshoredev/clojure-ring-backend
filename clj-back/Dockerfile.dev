@@ -1,0 +1,4 @@
+FROM clojure:temurin-8-lein
+COPY . /usr/src/app
+WORKDIR /usr/src/app
+CMD ["lein", "run", "clj-back"]
