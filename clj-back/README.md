@@ -1,10 +1,10 @@
 # clj-back
 
-A Clojure library designed to ... well, that part is up to you.
+The porpuse of this backend is to handle the payroll of a company.
 
 ## Usage
 
-FIXME
+The porpuse of this backend is to handle the payroll of a company.
 
 ## License
 
