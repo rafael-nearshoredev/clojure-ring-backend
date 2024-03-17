@@ -1,4 +1,7 @@
-FROM clojure:temurin-8-lein
-COPY . /usr/src/app
+FROM clojure:temurin-21-lein-jammy
+RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
-CMD ["lein", "run", "clj-back"]
+COPY project.clj /usr/src/app/
+RUN lein deps 
+COPY . /usr/src/app
+CMD lein run

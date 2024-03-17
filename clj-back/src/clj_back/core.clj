@@ -1,7 +1,7 @@
-(ns clj-back.core 
+(ns clj-back.core
   (:require [ring.adapter.jetty :as jetty]))
 
 (defn -main
   "I don't do a whole lot."
-  [x]
-  (println x "Hello, World!"))
+  []
+  (println  "Hello, World!"))

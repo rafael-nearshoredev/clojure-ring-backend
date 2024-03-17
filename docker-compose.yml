@@ -4,13 +4,13 @@ volumes:
   data:
   test_data:
 services:
-  gofapi:
+  clj-back:
     container_name: "clj-back"
     build:
       context: ./clj-back
       dockerfile: Dockerfile.dev
     volumes:
-      - ./gofapi:/usr/src/app # I want to manage volumes manually.
+      - ./clj-back:/usr/src/app # I want to manage volumes manually.
       - "${HOME}/.m2:/root/.m2"
       - "${HOME}/.aws:/root/.aws"
     #depends_on:
