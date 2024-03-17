@@ -14,8 +14,12 @@
   :target-path "target/%s/"
   :main ^:skip-aot clj-back.core
 
-
   :dependencies [[org.clojure/clojure "1.11.1"]
                  [ring/ring-core "1.11.0"]
-                 [ring/ring-jetty-adapter "1.11.0"]]
+                 [ring/ring-jetty-adapter "1.11.0"]
+                 [mount "0.1.18"]
+                 [nrepl "1.0.0"]
+                 [cider/cider-nrepl "0.28.5"]
+                 [org.clojure/tools.logging "1.2.4"]]
+
   :repl-options {:init-ns clj-back.core})
